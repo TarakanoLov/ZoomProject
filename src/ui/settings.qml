@@ -5,6 +5,8 @@ import QtQuick.Controls 2.3
 import QtGraphicalEffects 1.14
 
 Window {
+    width: 900
+    height: 600
     objectName: "mainWindow"
     visible: true
     maximumWidth: 900
@@ -16,7 +18,7 @@ Window {
 
     FontLoader {
     id: localFont
-    source: "Raleway-Light.ttf"
+    source: "fonts/Raleway-Light.ttf"
     }
 
     Rectangle {
@@ -94,6 +96,40 @@ Window {
             height: 1
             color: "#c5c5c5"
         }
+    }
+
+    Button {
+        id: button
+        x: 17
+        y: 46
+        width: 100
+        height: 25
+        text: qsTr("Button")
+    }
+
+    CheckBox {
+        id: checkBox
+        x: 21
+        y: 86
+        width: 857
+        height: 40
+        text: qsTr("Check Box")
+    }
+
+    Label {
+        id: label
+        x: 37
+        y: 354
+        text: qsTr("Некоторые важные сообщения")
+    }
+
+    Rectangle {
+        id: rectangle
+        x: 27
+        y: 386
+        width: 851
+        height: 136
+        color: "#ffffff"
     }
 
 }
