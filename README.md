@@ -1,2 +1,1 @@
-# ZoomProject
-Код команды Павлючук и компания, для virushack
+cd src; python3 ui.py
